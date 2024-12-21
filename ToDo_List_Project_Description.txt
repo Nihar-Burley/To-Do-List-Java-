@@ -1,0 +1,37 @@
+
+To-Do List Project - Short Description
+
+The To-Do List Project is a simple and efficient task management application built using Spring Boot and RESTful API. It allows users to manage their daily tasks by performing basic operations such as:
+
+- Create: Add a new task with a title, description, priority, and due date.  
+- Read: View all tasks or retrieve specific tasks by their ID.  
+- Update: Edit task details, such as title, description, status, or due date.  
+- Delete: Remove tasks once they are completed or no longer needed.
+
+Core Features
+1. Task Management: Users can organize their tasks with details like priority, due dates, and status (PENDING or COMPLETED).
+2. RESTful API Endpoints: Exposes APIs to integrate with front-end or mobile apps.
+3. Validation: Ensures data integrity by validating user inputs (e.g., mandatory titles and valid due dates).
+4. Sorting and Filtering: Tasks can be retrieved by priority, status, or due date.
+5. Database Integration: Stores tasks persistently in a relational database using Spring Data JPA.
+
+Project Layers
+- Presentation Layer: Provides RESTful endpoints via the TaskController.
+- Service Layer: Contains business logic for managing tasks.
+- Data Access Layer: Uses TaskRepository for seamless interaction with the database.
+- Database Layer: Stores task data, including fields like ID, title, description, status, priority, and due date.
+
+Technology Stack
+- Backend: Spring Boot, Spring Data JPA
+- Database: MySQL, H2 (or any relational database)
+- Build Tool: Maven/Gradle
+- Validation: Hibernate Validator (JSR 380)
+- Optional Features: Pagination, sorting, authentication, and Swagger for API documentation.
+
+Use Case Example
+Imagine a user named Alex wants to manage their daily schedule. Alex can:
+- Add tasks like "Submit Report" with a high priority and a deadline of tomorrow.
+- Mark the task as COMPLETED after finishing it.
+- Delete outdated tasks like "Buy groceries" after they've been done.
+
+This project provides a robust foundation for creating a practical task management system that can scale with additional features like user authentication or a front-end interface.
